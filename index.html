@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evaluación Sumativa de Interfaces</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-principal: #4f46e5; /* azul violeta elegante */
+      --color-secundario: #6366f1;
+      --color-fondo: #f3f4f6;
+      --color-texto: #1f2937;
+      --color-blanco: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--color-fondo);
+      color: var(--color-texto);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--color-principal), var(--color-secundario));
+      color: var(--color-blanco);
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 2.5rem auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--color-blanco);
+      border-radius: 12px;
+      padding: 1.8rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .card h2 {
+      color: var(--color-principal);
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+      border-left: 4px solid var(--color-secundario);
+      padding-left: 8px;
+    }
+
+    .card p {
+      text-align: justify;
+      font-weight: 300;
+    }
+
+    footer {
+      text-align: center;
+      background: var(--color-principal);
+      color: var(--color-blanco);
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .card {
+        padding: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Evaluación Sumativa de Interfaces</h1>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>¿Qué es?</h2>
+      <p>
+        La evaluación sumativa de interfaces analiza el rendimiento, efectividad y satisfacción del usuario una vez finalizado el desarrollo. Permite determinar si la interfaz cumple con los objetivos y expectativas de diseño.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Pruebas de Usabilidad</h2>
+      <p>
+        Evalúan la interacción del usuario con la interfaz para detectar problemas de uso. Miden la facilidad, eficiencia y satisfacción durante la navegación o ejecución de tareas.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Benchmarking</h2>
+      <p>
+        Consiste en comparar la interfaz con otras soluciones similares del mercado para identificar buenas prácticas, fortalezas y oportunidades de mejora.
+      </p>
+      <img src="benchmarking.jpg"  style="max-width: 50%; height: auto;">
+    </div>
+
+    <div class="card">
+      <h2>Análisis Web</h2>
+      <p>
+        Utiliza herramientas de medición digital como Google Analytics para observar el comportamiento de los usuarios, tiempo en el sitio, clics y rutas de navegación.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Encuestas y Cuestionarios</h2>
+      <p>
+        Permiten recopilar las percepciones y opiniones de los usuarios sobre la experiencia de uso, generando datos que complementan los resultados de las pruebas de usabilidad.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Revisión de Expertos</h2>
+      <p>
+        Involucra la participación de especialistas que evalúan la interfaz con base en criterios de usabilidad, accesibilidad y diseño, ofreciendo recomendaciones profesionales.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Proyecto: Evaluación Sumativa de Interfaces · Página Web Responsiva</p>
+  </footer>
+</body>
+</html>
