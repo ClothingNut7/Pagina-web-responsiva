@@ -3,152 +3,162 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evaluación Sumativa de Interfaces</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --color-principal: #4f46e5; /* azul violeta elegante */
-      --color-secundario: #6366f1;
-      --color-fondo: #f3f4f6;
-      --color-texto: #1f2937;
-      --color-blanco: #ffffff;
-    }
+  <title>Herramientas de Evaluación de Accesibilidad</title>
 
-    * {
+  <!-- Tipografía Aptos Display -->
+  <link href="https://fonts.cdnfonts.com/css/aptos-display" rel="stylesheet">
+
+  <style>
+    /* Estilo general */
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: var(--color-fondo);
-      color: var(--color-texto);
+      background-color: #0e0e0e;
+      color: #ffffff;
+      font-family: 'Aptos Display', sans-serif;
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(135deg, var(--color-principal), var(--color-secundario));
-      color: var(--color-blanco);
       text-align: center;
-      padding: 2rem 1rem;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      padding: 60px 20px 40px 20px;
+      background: linear-gradient(180deg, #1a1a1a 0%, #0e0e0e 100%);
+      border-bottom: 2px solid #e50914;
+      box-shadow: 0 0 30px rgba(229, 9, 20, 0.3);
     }
 
-    header h1 {
-      font-size: 2rem;
-      font-weight: 600;
-      letter-spacing: 1px;
+    h1 {
+      font-size: 2.8rem;
+      color: #e50914;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
 
-    .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: 2.5rem auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
     }
 
-    .card {
-      background: var(--color-blanco);
+    section {
+      margin-bottom: 50px;
+      background-color: #1a1a1a;
+      padding: 30px;
       border-radius: 12px;
-      padding: 1.8rem;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 0 25px rgba(229, 9, 20, 0.1);
     }
 
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    h2 {
+      color: #e50914;
+      border-left: 5px solid #e50914;
+      padding-left: 10px;
+      font-size: 1.8rem;
+      margin-top: 0;
     }
 
-    .card h2 {
-      color: var(--color-principal);
-      font-size: 1.3rem;
-      margin-bottom: 0.8rem;
-      border-left: 4px solid var(--color-secundario);
-      padding-left: 8px;
+    p {
+      font-size: 1.05rem;
     }
 
-    .card p {
-      text-align: justify;
-      font-weight: 300;
+    ul {
+      margin-top: 10px;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      background-color: #121212;
+      border-left: 4px solid #e50914;
+      margin-bottom: 10px;
+      padding: 12px 16px;
+      border-radius: 6px;
+    }
+
+    a {
+      color: #e50914;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     footer {
       text-align: center;
-      background: var(--color-principal);
-      color: var(--color-blanco);
-      padding: 1rem;
-      margin-top: 3rem;
+      padding: 30px 0;
+      color: #aaa;
+      border-top: 1px solid #333;
       font-size: 0.9rem;
-      letter-spacing: 0.5px;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
-
-      .card {
-        padding: 1.3rem;
-      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Evaluación Sumativa de Interfaces</h1>
+    <h1>Herramientas de Evaluación de Accesibilidad</h1>
   </header>
 
-  <div class="container">
-    <div class="card">
-      <h2>¿Qué es?</h2>
+  <main>
+    <section>
+      <h2>¿Qué es la accesibilidad web?</h2>
       <p>
-        La evaluación sumativa de interfaces analiza el rendimiento, efectividad y satisfacción del usuario una vez finalizado el desarrollo. Permite determinar si la interfaz cumple con los objetivos y expectativas de diseño.
+        La accesibilidad web se refiere al diseño y desarrollo de sitios web, herramientas y tecnologías 
+        que pueden ser utilizadas por todas las personas, incluyendo aquellas con discapacidades visuales, 
+        auditivas, motoras o cognitivas. El objetivo es garantizar que nadie quede excluido del acceso 
+        a la información o los servicios digitales.
       </p>
-    </div>
+    </section>
 
-    <div class="card">
-      <h2>Pruebas de Usabilidad</h2>
+    <section>
+      <h2>Importancia de evaluar la accesibilidad</h2>
       <p>
-        Evalúan la interacción del usuario con la interfaz para detectar problemas de uso. Miden la facilidad, eficiencia y satisfacción durante la navegación o ejecución de tareas.
+        Evaluar la accesibilidad de una página web permite detectar barreras que impiden una buena 
+        experiencia de usuario. Una evaluación adecuada ayuda a cumplir con estándares como 
+        <strong>WCAG (Web Content Accessibility Guidelines)</strong> y mejora la inclusión digital.
       </p>
-    </div>
+    </section>
 
-    <div class="card">
-      <h2>Benchmarking</h2>
-      <p>
-        Consiste en comparar la interfaz con otras soluciones similares del mercado para identificar buenas prácticas, fortalezas y oportunidades de mejora.
-      </p>
-      <img src="benchmarking.jpg"  style="max-width: 50%; height: auto;">
-    </div>
+    <section>
+      <h2>Principales herramientas de evaluación</h2>
+      <ul>
+        <li>
+          <strong><a href="https://wave.webaim.org/" target="_blank">WAVE (Web Accessibility Evaluation Tool)</a></strong><br>
+          Analiza páginas web e identifica errores comunes de accesibilidad directamente desde el navegador.
+        </li>
+        <li>
+          <strong><a href="https://www.deque.com/axe/" target="_blank">Axe Accessibility</a></strong><br>
+          Extensión para Chrome y Firefox que realiza auditorías automáticas de accesibilidad con informes detallados.
+        </li>
+        <li>
+          <strong><a href="https://developers.google.com/web/tools/lighthouse" target="_blank">Lighthouse</a></strong><br>
+          Herramienta de Google integrada en Chrome DevTools que evalúa accesibilidad, rendimiento y SEO.
+        </li>
+        <li>
+          <strong><a href="https://tenon.io/" target="_blank">Tenon</a></strong><br>
+          Plataforma profesional que permite analizar sitios completos y generar reportes personalizables.
+        </li>
+        <li>
+          <strong><a href="https://www.accessibilitychecker.org/" target="_blank">Accessibility Checker</a></strong><br>
+          Revisión en línea simple para encontrar errores en el código y verificar cumplimiento con WCAG.
+        </li>
+      </ul>
+    </section>
 
-    <div class="card">
-      <h2>Análisis Web</h2>
+    <section>
+      <h2>Conclusión</h2>
       <p>
-        Utiliza herramientas de medición digital como Google Analytics para observar el comportamiento de los usuarios, tiempo en el sitio, clics y rutas de navegación.
+        Evaluar la accesibilidad no solo mejora la experiencia de todos los usuarios, sino que también 
+        refleja un compromiso con la inclusión digital. Aplicar estas herramientas ayuda a crear sitios 
+        web más justos, funcionales y alineados con los estándares internacionales.
       </p>
-    </div>
-
-    <div class="card">
-      <h2>Encuestas y Cuestionarios</h2>
-      <p>
-        Permiten recopilar las percepciones y opiniones de los usuarios sobre la experiencia de uso, generando datos que complementan los resultados de las pruebas de usabilidad.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Revisión de Expertos</h2>
-      <p>
-        Involucra la participación de especialistas que evalúan la interfaz con base en criterios de usabilidad, accesibilidad y diseño, ofreciendo recomendaciones profesionales.
-      </p>
-    </div>
-  </div>
+    </section>
+  </main>
 
   <footer>
-    <p>Proyecto: Evaluación Sumativa de Interfaces · Página Web Responsiva</p>
+    © 2025 - Proyecto de Accesibilidad Web | Jonathan Martinez Martinez de la Vega ©
   </footer>
+
 </body>
 </html>
